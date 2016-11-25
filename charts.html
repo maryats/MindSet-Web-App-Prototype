@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Marie Yatsyk">
+
+	<title>MindSet</title>
+
+	<!-- Bootstrap 4.0.0 Alpha 5 -->
+	<link rel="stylesheet" href="css/bootstrap-flex.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Vertical Tabs Nav -->
+	<link rel="stylesheet" href="css/bootstrap.vertical-tabs.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h1>MindSet</h1>
+		<ul class="nav nav-tabs margin-top-20">
+			<li class="nav-item">
+				<a class="nav-link" href="dashboard.html">Calendar</a>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link active" href="charts.html">Insights</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="settings.html">Settings</a>
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="row margin-top-20">
+			<!-- Charts -->
+			<div class="col-xs-12 col-sm-6">
+				<h4>Data Over Time</h4>
+				<div class="row">
+					<div class="col-xs-3"> <!-- required for floating -->
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs tabs-left">
+							<li><a href="#home" data-toggle="tab">Calendar</a></li>
+							<li><a href="#profile" data-toggle="tab">Weather</a></li>
+							<li><a href="#messages" data-toggle="tab">...</a></li>
+							<li><a href="#settings" data-toggle="tab">...</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-9">
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane active" id="home"><p>Calendar Data</p></div>
+							<div class="tab-pane" id="profile">Weather Data</div>
+							<div class="tab-pane" id="messages">...1</div>
+							<div class="tab-pane" id="settings">...2</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<!-- Data Summary -->
+			<div class="col-xs-12 col-sm-6">
+				<h4>Summary</h4>
+				<p>Text summary of data goes here.</p>
+			</div>
+		</div>
+		<div class="row margin-top-20">
+			<!-- Mini Calendar -->
+			<div class="col-xs-12 col-sm-6">
+				<table class="table-condensed table-bordered table-striped margin-top-20">
+					<thead>
+						<tr>
+							<th colspan="7">
+								<span class="btn-group">
+									<a class="btn"><i class="icon-chevron-left"></i></a>
+									<a class="btn active">November 2016</a>
+									<a class="btn"><i class="icon-chevron-right"></i></a>
+								</span>
+							</th>
+						</tr>
+						<tr>
+							<th>Su</th>
+							<th>Mo</th>
+							<th>Tu</th>
+							<th>We</th>
+							<th>Th</th>
+							<th>Fr</th>
+							<th>Sa</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="muted">29</td>
+							<td class="muted">30</td>
+							<td class="muted">31</td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td class="btn-primary"><strong>20</strong></td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td class="muted">1</td>
+							<td class="muted">2</td>
+							<td class="muted">3</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- Suggestions -->
+			<div class="col-xs-8 col-md-5 col-lg-4 margin-top-20">
+				<h4>Suggestions</h4>
+				<p>Slider of tips goes here.</p>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+							<img src="https://placehold.it/350x150" alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<img src="https://placehold.it/350x150" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							<img src="https://placehold.it/350x150" alt="Third slide">
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="icon-prev" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="icon-next" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+</body>
+</html>
