@@ -1,8 +1,39 @@
+body {
+	font-family: 'Lato', 'Arial', sans-serif;
+	background-color: #d6e3ef;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+h6 {
+	font-weight: bold;
+}
+
 /* ---------------------------- Index ---------------------------- */
 
 .landing-page {
 	text-align: center;
 	margin-top: 37vh;
+	color: white;
+}
+
+.daisies-bg {
+	background: #d6e3ef url(../images/daisies.jpg) no-repeat fixed center;
+	background-size: cover;
+}
+
+.white-button {
+	color: #2a5d57;
+	background: white;
+	border: white;
+}
+
+.white-button:hover, .white-button:active {
+	color: white;
+	background: #2a5d57;
+	border: #2a5d57;
 }
 
 /* --------------------------- Log In ---------------------------- */
@@ -11,11 +42,32 @@
 	margin-top: 27vh;
 	padding: 60px 0;
 	max-width: 800px;
-	border: 2px solid black;
 	text-align: center;
+	background: white;
+	border-color: transparent;
+	border-radius: 10px;
+	padding: 10px;
 }
 
+/* -------------------------- Settings --------------------------- */
 
+.white-bg {
+	background: white;
+	border-color: transparent;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.blue-button {
+	color: #2a5d57;
+	background: #d6e3ef;
+	border: #d6e3ef;
+}
+.blue-button:hover, .blue-button:active {
+	color: #d6e3ef;
+	background: #2a5d57;
+	border: #2a5d57;
+}
 
 /* ----------------------- Global Helpers ------------------------ */
 
@@ -23,9 +75,18 @@
 	text-align: center;
 }
 
+.text-left {
+	text-align: left;
+}
+
 .margin-top-20 {
 	margin-top: 20px;
 }
+
+.float-right {
+	float: right;
+}
+
 /* ------------------------ Media Queries ------------------------ */
 
 /*Extra small devices (portrait phones, less than 544px)*/

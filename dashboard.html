@@ -15,22 +15,34 @@
 	<link href="css/bootstrap-flex.css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link href="css/style.css" rel="stylesheet">
+	<!-- Lato Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
 
 <body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-light" style="background-color: white;">
+		<button class="navbar-toggler hidden-sm-up float-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+		<div class="collapse navbar-toggleable-xs" id="navbarResponsive">
+			<a class="navbar-brand" href="#">MindSet</a>
+			<ul class="nav navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="dashboard.html">Calendar<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="charts.html">Insights</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="settings.html">Settings</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Log Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	<div class="container-fluid">
-		<h1>MindSet</h1>
-		<ul class="nav nav-tabs">
-			<li class="nav-item active">
-				<a class="nav-link active" href="dashboard.html">Calendar</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="charts.html">Insights</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="settings.html">Settings</a>
-			</li>
-		</ul>
+		<h4 class="margin-top-20">Calendar</h4>
 		<div class="row">
 			<div class="col-xs-12 col-sm-9 calendar margin-top-20">
 				<table class="table">

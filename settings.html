@@ -15,59 +15,75 @@
 	<link href="css/bootstrap-flex.css" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link href="css/style.css" rel="stylesheet">
+	<!-- Lato Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 </head>
 
 <body>
-	<div class="container-fluid">
-		<h1>MindSet</h1>
-		<ul class="nav nav-tabs">
-			<li class="nav-item">
-				<a class="nav-link" href="dashboard.html">Calendar</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="charts.html">Insights</a>
-			</li>
-			<li class="nav-item active">
-				<a class="nav-link active" href="settings.html">Settings</a>
-			</li>
-		</ul>
-	</div>
+	<!-- Navigation -->
+	<nav class="navbar navbar-light" style="background-color: white;">
+		<button class="navbar-toggler hidden-sm-up float-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+		<div class="collapse navbar-toggleable-xs" id="navbarResponsive">
+			<a class="navbar-brand" href="#">MindSet</a>
+			<ul class="nav navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="dashboard.html">Calendar<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="charts.html">Insights</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="settings.html">Settings <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Log Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-4 margin-top-20">
-				<h4>Data Integrations</h4>
-				<div class="margin-top-20">
-					<h5>Calendar</h5>
-					<p>No calendars connected yet.</p>
-					<button type="button" class="btn btn-primary">Connect a Calendar</button>
-				</div>
-				<div class="margin-top-20">
-					<h5>Third-Party Apps</h5>
-					<p>No apps connected yet.</p>
-					<button type="button" class="btn btn-primary">Connect a Data Source</button>
+			<div class="col-xs-12 col-sm-6 col-md-4 margin-top-20 text-center">
+				<div class="white-bg">
+					<h4>Calendar</h4>
+					<p class="text-left">Sync your calendar events from your Google, iOS (including Reminders), or Windows calendar.</p>
+					<div class="margin-top-20">
+						<h6>Connected Calendars</h6>
+						<p>No calendars connected yet.</p>
+					</div>
+					<button type="button" class="btn btn-primary blue-button">Add a Calendar</button>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4 margin-top-20">
-				<h4>Data Tracking</h4>
-				<p>No tracking goals set.</p>
-				<button type="button" class="btn btn-primary">Start tracking!</button>
+			<div class="col-xs-12 col-sm-6 col-md-4 margin-top-20 text-center">
+				<div class="white-bg">
+					<h4>Data Sources</h4>
+					<p class="text-left">Pull in data from other tracking apps including FitBit, Apple Health, and more to teach MindSet what activities improve your mood.</p>
+					<div class="margin-top-20">
+						<h6>Connected Apps:</h6>
+						<p>No apps connected yet.</p>
+					</div>
+					<button type="button" class="btn btn-primary blue-button">Link to App Data</button>
+				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 margin-top-20">
-				<h4>Account Settings</h4>
-				<h5>Username</h5>
-				<p>your_username</p>
-				<h5>Email</h5>
-				<p>your_username@email.com</p>
-				<h5>Password</h5>
-				<p>***********</p>
-				<button type="button" class="btn btn-primary">Edit Account Settings</button>
+			<div class="col-xs-12 col-sm-12 col-md-4 margin-top-20 text-center">
+				<div class="white-bg">
+					<h4>Account Settings</h4>
+					<div class="text-left">
+						<h6>Username</h6>
+						<p>your_username</p>
+						<h6>Email</h6>
+						<p>your_username@email.com</p>
+						<h6>Password</h6>
+						<p>***********</p></div>
+						<button type="button" class="btn btn-primary blue-button">Edit Account Details</button>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- jQuery first, then Tether, then Bootstrap JS. -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-</body>
-</html>
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+	</body>
+	</html>
