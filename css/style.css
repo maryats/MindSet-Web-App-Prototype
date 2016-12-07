@@ -1,10 +1,13 @@
 body {
 	font-family: 'Lato', 'Arial', sans-serif;
-	background-color: #d6e3ef;
+	background-color: #B5CCE2;
+}
+h1 {
+	font-size: 2.3em;
 }
 
 h4 {
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 h6 {
@@ -19,9 +22,17 @@ h6 {
 	color: white;
 }
 
+.mindset-logo {
+	margin-right: 50px;
+}
+
+.logo {
+	margin-bottom: -20px;
+}
+
 .daisies-bg {
 	background: #d6e3ef url(../images/daisies.jpg) no-repeat fixed center;
-	background-size: cover;
+	background-size: cover; 
 }
 
 .white-button {
@@ -38,8 +49,13 @@ h6 {
 
 /* --------------------------- Log In ---------------------------- */
 
+.login-page-title {
+	text-align: center;
+	margin-top: 17vh;
+	color: white;
+}
+
 .login-container {
-	margin-top: 27vh;
 	padding: 60px 0;
 	max-width: 800px;
 	text-align: center;
@@ -49,13 +65,102 @@ h6 {
 	padding: 10px;
 }
 
+/* -------------------------- Nav Bar ---------------------------- */
+
+.navbar-brand {
+	margin-top: -15px;
+}
+
+
+/* -------------------------- Calendar --------------------------- */
+
+.calendar-header {
+	font-size: 12px;
+	background-color: white;
+	border-radius: 12px 12px 0 0;
+	padding-top: 6px;
+	padding-left: 25px;
+}
+.calendar {
+	height: 60vh;
+	overflow: scroll;
+}
+.calendar-footer {
+	font-size: 12px;
+	background-color: white;
+	border-radius: 0 0 12px 12px;
+	padding-top: 2px;
+}
+.cell {
+	font-size: 12px;
+	padding: 2px 0;
+}
+.header-cell {
+	background-color: white;
+	border: 1px solid white;
+}
+
+.label-cell {
+	background-color: #ddd;
+	border: 1px solid #ddd;
+}
+.calendar-cell {
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.mood-button {
+	border-radius: 12px;
+	padding: 1px 4px;
+}
+
+/* -------------------------- Insights --------------------------- */
+
+.section-bar {
+	background: #ccc;
+	border-color: transparent;
+	border-radius: 40px;
+	padding: 6px 12px 1px 12px;
+	color: white;
+}
+
+.next-goal-button {
+	padding-bottom: 0px;
+}
+
+.tooltips {
+	background: #DEEDFC;
+	border-color: transparent;
+	border-radius: 30px;
+	padding: 0.02rem 0.4rem;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	cursor: default;
+}
+.tooltips:hover {
+	background: #DEEDFC;
+	border-color: transparent;
+	color: white;
+	cursor: default;
+}
+.tooltip.tooltip-top .tooltip-inner::before, .tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
+  border-top-color: white;
+}
+
+.tooltip-inner {
+	font-size: 12px;
+	color: #B5CCE2;
+	background-color: white;
+	border-radius: 10px;
+}
+
 /* -------------------------- Settings --------------------------- */
 
 .white-bg {
 	background: white;
 	border-color: transparent;
-	border-radius: 10px;
-	padding: 10px;
+	border-radius: 15px;
+	padding: 25px;
 }
 
 .blue-button {
@@ -79,12 +184,32 @@ h6 {
 	text-align: left;
 }
 
+.margin-top-10 {
+	margin-top: 10px;
+}
+
 .margin-top-20 {
 	margin-top: 20px;
 }
 
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
 .float-right {
 	float: right;
+}
+
+.white-text {
+	color: white;
+}
+
+.fa-chevron-down {
+	color: #373a3c;
+}
+
+.max-width-95 {
+	max-width: 92%;
 }
 
 /* ------------------------ Media Queries ------------------------ */
