@@ -1,17 +1,111 @@
 body {
 	font-family: 'Lato', 'Arial', sans-serif;
-	background-color: #B5CCE2;
+	background-color: #F1FBFB;
+	font-size: .9rem;
 }
 h1 {
-	font-size: 2.3em;
+	font-size: 2.3rem;
 }
-
 h4 {
+	font-size: 1.3rem;
+}
+h6 {
 	/*font-weight: bold;*/
 }
+a {
+	text-decoration: none;
+	color: #33CCCC;
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+	color: #33CCCC;
+}
 
-h6 {
+.window-max-width {
+	max-width: 85%;
+}
+
+/* ----------------------- Common Elements ----------------------- */
+
+.tooltips {
+	background: #BDEFEF;
+	border-color: transparent;
+	border-radius: 30px;
+	padding: 0.02rem 0.4rem;
+	font-size: 14px;
 	font-weight: bold;
+	color: white;
+	cursor: default;
+}
+.tooltips:hover {
+	background: #33CCCC;
+	border-color: transparent;
+	color: white;
+	cursor: default;
+}
+.tooltip.tooltip-top .tooltip-inner::before, .tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
+	border-top-color: white;
+}
+.tooltip-inner {
+	font-size: 12px;
+	color: #33cccc;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.blue-button {
+	color: white;
+	background: #33CCCC;
+	border: #33CCCC;
+	border-radius: 8px;
+}
+.blue-button:hover, .blue-button:active {
+	color: white;
+	background: #2FBABA;
+	border: #2FBABA;
+}
+
+.white-bg {
+	background: white;
+	border-color: transparent;
+	border-radius: 15px;
+	padding: 25px;
+}
+
+/* -------------------------- Nav Bar ---------------------------- */
+
+.navbar-brand {
+	margin-top: -20px;
+}
+/*#navbarResponsive {
+	text-align: center;
+}*/
+
+/* Makes nav ul appear below MindSet logo and hamburger button */
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+.container > .navbar-header,
+.container-fluid > .navbar-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .container > .navbar-header,
+  .container-fluid > .navbar-header{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.navbar-header:before,
+.navbar-header:after {
+  display: table;
+  content: " ";
+}
+.navbar-header:after {
+  clear: both;
 }
 
 /* ---------------------------- Index ---------------------------- */
@@ -21,30 +115,26 @@ h6 {
 	margin-top: 37vh;
 	color: white;
 }
-
 .mindset-logo {
 	margin-right: 50px;
 }
-
 .logo {
 	margin-bottom: -20px;
 }
-
+.white-button {
+	color: #33CCCC;
+	background: white;
+	border: white;
+	border-radius: 8px;
+}
+.white-button:hover, .white-button:active {
+	color: white;
+	background: #33CCCC;
+	border: #33CCCC;
+}
 .daisies-bg {
 	background: #d6e3ef url(../images/daisies.jpg) no-repeat fixed center;
 	background-size: cover; 
-}
-
-.white-button {
-	color: #2a5d57;
-	background: white;
-	border: white;
-}
-
-.white-button:hover, .white-button:active {
-	color: white;
-	background: #2a5d57;
-	border: #2a5d57;
 }
 
 /* --------------------------- Log In ---------------------------- */
@@ -54,7 +144,6 @@ h6 {
 	margin-top: 17vh;
 	color: white;
 }
-
 .login-container {
 	padding: 60px 0;
 	max-width: 800px;
@@ -65,25 +154,30 @@ h6 {
 	padding: 10px;
 }
 
-/* -------------------------- Nav Bar ---------------------------- */
-
-.navbar-brand {
-	margin-top: -15px;
-}
-
-
 /* -------------------------- Calendar --------------------------- */
 
 .calendar-header {
-	font-size: 12px;
 	background-color: white;
 	border-radius: 12px 12px 0 0;
 	padding-top: 6px;
 	padding-left: 25px;
 }
+.cal-button-left {
+	border-radius: 15px;
+	padding: 1px 7px 1px 4px ;
+}
+.cal-button-right {
+	border-radius: 15px;
+	padding: 1px 4px 1px 7px ;
+}
+
 .calendar {
 	height: 60vh;
 	overflow: scroll;
+}
+.label-cell {
+	background-color: #F4FCFC;
+	border-right: 1px solid white;
 }
 .calendar-footer {
 	font-size: 12px;
@@ -93,24 +187,45 @@ h6 {
 }
 .cell {
 	font-size: 12px;
-	padding: 2px 0;
+	padding: 5px 0;
+	text-align: center;
 }
-.header-cell {
-	background-color: white;
-	border: 1px solid white;
-}
-
-.label-cell {
-	background-color: #ddd;
-	border: 1px solid #ddd;
+.first-row-cell {
+	border-left: 1px solid white;
 }
 .calendar-cell {
-	border-top: 1px solid #ddd;
-	border-right: 1px solid #ddd;
+	border-right: 1px solid white;
+	background-color: #D3F3F3;
 }
+.calendar-cell-1 {
+	border-right: 1px solid white;
+	background-color: #E5F8F8;
+}
+
+.weather-img {
+	height: 20px;
+	background-blend-mode: multiply;
+	display: inline-block;
+	margin-top: -13px;
+}
+
 .mood-button {
 	border-radius: 12px;
 	padding: 1px 4px;
+}
+.center-checkbox {
+	position: relative;
+	margin: 0 auto;
+}
+
+.todo-bg {
+	background: white;
+	border-color: transparent;
+	border-radius: 15px;
+	padding: 15px;
+}
+.todo-text {
+	font-size: .8rem;
 }
 
 /* -------------------------- Insights --------------------------- */
@@ -123,94 +238,56 @@ h6 {
 	color: white;
 }
 
-.next-goal-button {
-	padding-bottom: 0px;
-}
-
-.tooltips {
-	background: #DEEDFC;
-	border-color: transparent;
-	border-radius: 30px;
-	padding: 0.02rem 0.4rem;
-	font-size: 14px;
-	font-weight: bold;
-	color: white;
-	cursor: default;
-}
-.tooltips:hover {
-	background: #DEEDFC;
-	border-color: transparent;
-	color: white;
-	cursor: default;
-}
-.tooltip.tooltip-top .tooltip-inner::before, .tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
-  border-top-color: white;
-}
-
-.tooltip-inner {
-	font-size: 12px;
-	color: #B5CCE2;
-	background-color: white;
-	border-radius: 10px;
-}
-
 /* -------------------------- Settings --------------------------- */
 
-.white-bg {
-	background: white;
-	border-color: transparent;
-	border-radius: 15px;
-	padding: 25px;
-}
 
-.blue-button {
-	color: #2a5d57;
-	background: #d6e3ef;
-	border: #d6e3ef;
-}
-.blue-button:hover, .blue-button:active {
-	color: #d6e3ef;
-	background: #2a5d57;
-	border: #2a5d57;
-}
 
 /* ----------------------- Global Helpers ------------------------ */
 
 .text-center {
 	text-align: center;
 }
-
 .text-left {
 	text-align: left;
 }
+.title-text {
+	color: #0B5270;
+}
 
+.small-text {
+	font-size: .6rem;
+	line-height: .8rem;
+	display: inline-block;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 12px;
+	padding-top: 2px;
+}
+
+.margin-top-5 {
+	margin-top: 5px;
+}
 .margin-top-10 {
 	margin-top: 10px;
 }
-
 .margin-top-20 {
 	margin-top: 20px;
 }
-
 .margin-bottom-20 {
 	margin-bottom: 20px;
 }
 
 .float-right {
-	float: right;
-}
-
-.white-text {
-	color: white;
+	float: right !important;
 }
 
 .fa-chevron-down {
 	color: #373a3c;
 }
 
-.max-width-95 {
-	max-width: 92%;
-}
+
 
 /* ------------------------ Media Queries ------------------------ */
 
@@ -218,13 +295,25 @@ h6 {
 /*No media query since this is the default in Bootstrap*/
 
 /*Small devices (landscape phones, 544px and up)*/
-@media (min-width: 544px) { ... }
+@media (min-width: 544px) {...}
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+	.hamburger {
+		display: none !important;
+	}
+	.navbar-max-width {
+		max-width: 90%;
+	}
+	
+}
 
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+	.collapse-caret {
+		display: none;
+	}
+}
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { ... }

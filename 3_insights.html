@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Marie Yatsyk">
+
+	<title>MindSet</title>
+
+	<!-- Bootstrap 4.0.0 Alpha 5 -->
+	<link rel="stylesheet" href="css/bootstrap-flex.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Hamburger Nav CSS -->
+	<link href="css/hamburgers.css" rel="stylesheet">
+	<!-- Lato Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/6d24c2dec2.js"></script>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-light" style="background-color: white;">
+		<div class="container-fluid navbar-max-width">
+			<div class="navbar-header">
+				<button class="hidden-md-up hamburger hamburger--squeeze float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>  
+				<a class="navbar-brand" href="#">
+					<svg width="2.1em" height="2em" xmlns="http://www.w3.org/2000/svg" viewBox="86 222 165.3 191.6"><path d="M213.5 297.6c28.3 4.6 27.9 24.5 29.4 36.3 0.9 6.7 5 14.2 8.3 19.9 1.5 2.5-7.5 3.7-10 7.8 -1.2 2-4.7 19.7-7.3 22.8 -2.5 3-18.3-5.9-21-3.2 -3.7 3.7-4.8 11.3-5.3 15.9 -0.6 6.8 2.1 16.5-0.8 16.6 -2.8 0.1-18.6-5.6-27.6-15 -4.8-5.1-9.5-10.4-8.6-13.9 0.3-1.2 4-3.6 7.9-8.3 2.2-2.7 9-12.2 4-19.9 -6.2-9.5-10.8-20.6-8.3-32C175.4 318.9 184.6 292.9 213.5 297.6zM208 327.7c-3.9-5.7-7.8-8.4-13.7-7.2 -5.8 1.1-9.4 5.7-8.7 12.1 0.8 7.5 13.4 17.5 22.4 22.9 9.1-5.5 20-15 21.4-22.4 0.8-4.4-1.8-12.1-8.5-12.7C213.7 319.6 208 327.7 208 327.7z" fill="#373a3c"/></path></svg>MindSet
+				</a>
+			</div>
+			<div id="navbarResponsive" class="collapse navbar-toggleable-sm" id="navbarResponsive" aria-expanded="false">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="4_calendar.html">Calendar</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Insights<span class="sr-only">(current)</span></a>
+					</li>
+					<div class="float-md-right">
+						<li class="nav-item">
+							<a class="nav-link" href="2_settings.html">Settings</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Log Out</a>
+						</li>
+					</div>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div class="container-fluid window-max-width">
+		<h4 class="title-text margin-top-20">Insights</h4>
+		<div class="row">
+			<div class="col-xs-12 margin-top-20">
+				<div class="white-bg">
+					<h5>Your MindSet Plan <button type="button" class="btn btn-secondary tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="MindSet coaches you to build positive habits to reach your goals one a time, using suggested strategies that work for other users.">?</button></h5>
+					<div class="row">
+						<div class="col-xs-12 col-md-8 text-center">
+							<div class="text-left">
+								<h6 class="title-text">Current Goal</h6>
+								<p>What habit would you like to build?</p>
+								<p class="title-text"><b>My Strategies:</b></p>
+								<div class="row section-bar">
+									<p><button type="button" class="btn btn-secondary tooltips">1</button> How you'll accomplish your goal...</p>
+								</div>
+								<div class="row section-bar margin-top-10">
+									<p><button type="button" class="btn btn-secondary tooltips">2</button> How you'll accomplish your goal...</p>
+								</div>
+								<div class="row section-bar margin-top-10">
+									<p><button type="button" class="btn btn-secondary tooltips">3</button> How you'll accomplish your goal...</p>
+								</div>
+							</div>
+							<button type="button" class="btn btn-info blue-button margin-top-20">Set Your Goal</button>
+						</div>
+						<div class="col-xs-12 col-md-4 text-center">
+							<div class="text-left">
+								<h6 class="title-text">Next Goal</h6>
+								<p>Suggested based on your habit and mood data.</p>
+								<p><i>No suggestions yet... set a goal to get started!</i></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Articles -->
+			<div class="col-xs-12 margin-top-20">
+				<div class="white-bg">
+					<div class="row">
+						<div class="col-xs-7 col-sm-8">
+							<h5>Inspirations <button type="button" class="btn btn-secondary tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Articles recommended for you based on your goals, mood data, and MindSet insights.">?</button></h5>
+						</div>
+						<div class="col-xs-5 col-sm-4 input-group">
+							<input type="text" class="form-control" placeholder="Search...">
+							<span class="input-group-btn">
+								<button class="btn btn-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</span>
+						</div>
+					</div>
+					<div class="row margin-top-20">
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/a1.jpg" alt="Card image cap">
+								<div class="card-block">
+									<h5 class="card-title">The Internet Wants to Help You  Take Care of Yourself</h5>
+									<p class="card-text">Stop. Are you hungry? Then eat something before reading this.</p>
+									<a href="http://www.theatlantic.com/health/archive/2015/10/internet-self-care/408580/" class="title-text" target="_blank">THE ATLANTIC</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/a2.jpg" alt="Card image cap">
+								<div class="card-block">
+									<h5 class="card-title">The Sleep Habits of Highly Successful People</h5>
+									<p class="card-text">Sleep is a much-coveted enterprise. And as researchers learn more…</p>
+									<a href="http://www.forbes.com/sites/alicegwalton/2015/11/13/the-sleep-habits-of-highly-successful-people-infographic/#1c90c820386f" class="title-text" target="_blank">FORBES</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/a3.jpg" alt="Card image cap">
+								<div class="card-block">
+									<h5 class="card-title">37 Science-Backed Tips For Better Sleep Tonight</h5>
+									<p class="card-text">We know we’re supposed to get enough sleep, and we really try. But we also…</p>
+									<a href="http://www.huffingtonpost.com/2014/03/17/better-sleep-tips-best_n_4958036.html" class="title-text" target="_blank">HUFFINGTON POST</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="card">
+								<img class="card-img-top img-fluid" src="images/a4.jpg" alt="Card image cap">
+								<div class="card-block">
+									<h5 class="card-title">Self-Care and Why It’s Important</h5>
+									<p class="card-text">Self-care is a way to release some of the stress in your life. It seems that we don't do enough of this…</p>
+									<a href="http://therapywithheart.com/self-care-important/" class="title-text" target="_blank">THERAPY WITH HEART</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+	<script>
+	// Enables Tooltips
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip(); 
+	});
+
+	//Toggle Hamburger with jQuery
+	var $hamburger = $(".hamburger");
+	$hamburger.on("click", function(e) {
+		$hamburger.toggleClass("is-active");
+      // Do something else, like open/close menu
+  });
+
+</script>
+</body>
+</html>
