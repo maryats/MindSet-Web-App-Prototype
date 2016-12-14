@@ -21,6 +21,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	<!-- Font Awesome -->
 	<script src="https://use.fontawesome.com/6d24c2dec2.js"></script>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#33cccc">
+	<meta name="theme-color" content="#d3f3f3">
 </head>
 
 <body>
@@ -39,11 +47,11 @@
 						<a class="nav-link" href="#">Calendar<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="3_insights.html">Insights</a>
+						<a class="nav-link" href="05_insights.html">Insights</a>
 					</li>
 					<div class="float-md-right">
 						<li class="nav-item">
-							<a class="nav-link" href="2_settings.html">Settings</a>
+							<a class="nav-link" href="04_settings.html">Settings</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">Log Out</a>
@@ -94,7 +102,7 @@
 						<input class="form-control" type="time" value="18:30:00" id="example-time-input">
 					</div>
 				</div>
-				<p><i>Keeping a mood diary helps identify what activities make you feel happy and well, to help you develop positive habits for a resilient mindset!</i></p>
+				<small class="gray-text"><i>Keeping a mood diary helps identify what activities make you feel happy and well, to help you develop positive habits for a resilient mindset!</i></small>
 				<div class="modal-footer text-center">
 					<button type="button" class="btn btn-primary blue-button">Save Mood</button>
 				</div>
@@ -102,13 +110,16 @@
 		</div>
 	</div>
 
-	<!-- Calendar -->
+	<!-- Page Content -->
 	<div class="container-fluid window-max-width">
 		<div class="row">
-			<div class="col-xs-12 col-sm-9 margin-top-20">
-				<h4 class="title-text">Calendar </h4>
+			<div class="col-xs-12 margin-top-20"> 
+				<h4 class="title-text">Calendar</h4>
+			</div>
+			<!-- Calendar -->
+			<div class="col-xs-12 col-lg-9 margin-top-15">
 				<!-- Calendar Header -->
-				<div class="col-xs-12 calendar-header margin-top-20">
+				<div class="col-xs-12 calendar-header">
 					<div class="row">
 						<h6>
 							<button type="button" class="btn btn-secondary cal-button-left">
@@ -117,10 +128,11 @@
 							<button type="button" class="btn btn-secondary cal-button-right">
 								<i class="fa fa-chevron-right" aria-hidden="true"></i>
 							</button>
-							Dec 11 – Dec 17
+							&nbsp;&nbsp;Dec 11 – Dec 17
 						</h6>
 					</div>
 				</div>
+				<!-- Dates & Weather -->
 				<div class="col-xs-12">
 					<div class="row text-center">
 						<div class="col-xs-2 col-md cell label-cell first-row-cell"><b>&nbsp;</b></div>
@@ -167,6 +179,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- Calendar Body -->
 					<div class="col-xs-12 calendar">
 						<div class="row text-center">
 							<div class="col-xs-2 col-md cell calendar-cell-1 first-row-cell"><b>5am</b></div>
@@ -408,7 +421,8 @@
 							<div class="col-xs cell calendar-cell"></div>
 							<div class="col-xs cell calendar-cell"></div>
 						</div>
-					</div><!-- /Calendar Rows-->
+					</div>
+					<!-- Mood Footer -->
 					<div class="col-xs-12">
 						<div class="row text-center calendar-footer">
 							<div class="col-xs cell"><b>Mood</b></div>
@@ -435,19 +449,17 @@
 									<i class="fa fa-smile-o" aria-hidden="true"></i>
 								</button></div>
 							</div>
-						</div><!-- /Log Mood -->
+						</div>
 					</div> <!-- /Calendar-->
 
 					<!-- To Do -->
-					<div class="col-xs-12 col-sm-3 margin-top-20">
-						<h4>&nbsp;</h4>
-						<div class="todo-bg margin-top-20">
-
+					<div class="col-xs-12 col-lg-3 margin-top-20">
+						<div class="todo-bg">
 							<div class="small-text float-xs-right margin-top-5"><a href="#">Edit</a></div>
 							<h6 class="border-bottom">To Do Today</h6>
 							<div class="form-check border-bottom todo-text">
 								<label class="form-check-label">
-								<input class="form-check-input" type="checkbox" value="">&nbsp;&nbsp; Connect a calendar in Settings
+									<input class="form-check-input" type="checkbox" value="">&nbsp;&nbsp; Connect a calendar in Settings
 								</label>
 							</div>
 							<div class="form-check border-bottom todo-text">
@@ -460,7 +472,7 @@
 									<input class="form-check-input" type="checkbox" value="">&nbsp;&nbsp; Set your goal in Insights
 								</label>
 							</div>
-							<span class="todo-text"><a href="#">&nbsp;+ &nbsp;&nbsp;Click to add a new task</a></span>
+							<span class="todo-text"><a href="#">&nbsp;+ &nbsp;&nbsp;Add new task</a></span>
 						</div>
 					</div>
 				</div>
