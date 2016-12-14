@@ -44,10 +44,10 @@
 			<div id="navbarResponsive" class="collapse navbar-toggleable-sm" id="navbarResponsive" aria-expanded="false">
 				<ul class="nav navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="03_calendar.html">Calendar</a>
+						<a class="nav-link" href="21_calendar.html">Calendar</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="05_insights.html">Insights</a>
+						<a class="nav-link" href="22_insights.html">Insights</a>
 					</li>
 					<div class="float-md-right">
 						<li class="nav-item active">
@@ -125,7 +125,7 @@
 					</div>
 				</div>
 				<div class="modal-footer text-center">
-					<a href="11_settings.html"><button type="button" class="btn btn-primary blue-button">Save Calendar</button></a>
+					<button type="button" class="btn btn-primary blue-button">Save Calendar</button>
 				</div>
 			</div>
 		</div>
@@ -228,9 +228,21 @@
 						<p class="margin-top-10">Sync your calendar events from your Google, iOS (including Reminders), or Windows calendar.</p>
 						<div class="margin-top-20">
 							<h6>Connected Calendars:</h6>
-							<p class="gray-text">No calendars connected yet.</p>
+							<div class="row flex-items-xs-center">
+								<div class="row pill-container-1 flex-items-xs-center">
+									<div class="col-xs-3 col-sm-1 col-md-1 text-left">
+										<img src="images/icon.jpg" class="cal-icon img-fluid">
+									</div>
+									<div class="col-xs-6 offset-xs-1 text-left">
+										<p class="cal-details">Google Calendar <br><small class="gray-text">eve@gmail.com</small></p>
+									</div>
+									<div class="col-xs-3 edit-buttons">
+										<h5><i class="fa fa-pencil" aria-hidden="true"></i> <i class="fa fa-trash-o" aria-hidden="true"></i></h5>
+									</div>
+								</div>
+							</div>
 						</div>
-						<button type="button" class="btn btn-primary blue-button" data-toggle="modal" data-target="#calModal">Add a Calendar</button>
+						<button type="button" class="btn btn-primary blue-button margin-top-20" data-toggle="modal" data-target="#calModal">Add a Calendar</button>
 					</div>
 				</div>
 			</div>
@@ -244,7 +256,7 @@
 						<p class="margin-top-10">Pull in data from tracking apps including FitBit, Apple Health, and more to teach MindSet what activities improve your mood.</p>
 						<div class="margin-top-20">
 							<h6>Connected Apps:</h6>
-							<p class="gray-text">No apps connected yet.</p>
+							<p>No apps connected yet.</p>
 						</div>
 						<button type="button" class="btn btn-primary blue-button" data-toggle="modal" data-target="#dataSrcModal">Link App Data</button>
 					</div>

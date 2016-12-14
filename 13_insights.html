@@ -38,7 +38,7 @@
 			<div class="navbar-header">
 				<button class="hidden-md-up hamburger hamburger--squeeze float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>  
 				<a class="navbar-brand" href="#">
-					<svg width="2.1em" height="2em" xmlns="http://www.w3.org/2000/svg" viewBox="86 222 165.3 191.6"><path d="M213.5 297.6c28.3 4.6 27.9 24.5 29.4 36.3 0.9 6.7 5 14.2 8.3 19.9 1.5 2.5-7.5 3.7-10 7.8 -1.2 2-4.7 19.7-7.3 22.8 -2.5 3-18.3-5.9-21-3.2 -3.7 3.7-4.8 11.3-5.3 15.9 -0.6 6.8 2.1 16.5-0.8 16.6 -2.8 0.1-18.6-5.6-27.6-15 -4.8-5.1-9.5-10.4-8.6-13.9 0.3-1.2 4-3.6 7.9-8.3 2.2-2.7 9-12.2 4-19.9 -6.2-9.5-10.8-20.6-8.3-32C175.4 318.9 184.6 292.9 213.5 297.6zM208 327.7c-3.9-5.7-7.8-8.4-13.7-7.2 -5.8 1.1-9.4 5.7-8.7 12.1 0.8 7.5 13.4 17.5 22.4 22.9 9.1-5.5 20-15 21.4-22.4 0.8-4.4-1.8-12.1-8.5-12.7C213.7 319.6 208 327.7 208 327.7z" fill="#373a3c"/></path></svg>MindSet
+					<svg width="2.1em" height="2em" xmlns="http://www.w3.org/2000/svg" viewBox="86 222 165.3 191.6"><path d="M213.5 297.6c28.3 4.6 27.9 24.5 29.4 36.3 0.9 6.7 5 14.2 8.3 19.9 1.5 2.5-7.5 3.7-10 7.8 -1.2 2-4.7 19.7-7.3 22.8 -2.5 3-18.3-5.9-21-3.2 -3.7 3.7-4.8 11.3-5.3 15.9 -0.6 6.8 2.1 16.5-0.8 16.6 -2.8 0.1-18.6-5.6-27.6-15 -4.8-5.1-9.5-10.4-8.6-13.9 0.3-1.2 4-3.6 7.9-8.3 2.2-2.7 9-12.2 4-19.9 -6.2-9.5-10.8-20.6-8.3-32C175.4 318.9 184.6 292.9 213.5 297.6zM208 327.7c-3.9-5.7-7.8-8.4-13.7-7.2 -5.8 1.1-9.4 5.7-8.7 12.1 0.8 7.5 13.4 17.5 22.4 22.9 9.1-5.5 20-15 21.4-22.4 0.8-4.4-1.8-12.1-8.5-12.7C213.7 319.6 208 327.7 208 327.7z" fill="#0B5270"/></path></svg>MindSet
 				</a>
 			</div>
 			<div id="navbarResponsive" class="collapse navbar-toggleable-sm" id="navbarResponsive" aria-expanded="false">
@@ -118,7 +118,7 @@
 							</div>
 						</div>
 						<div class="modal-footer text-center">
-							<a href=""><button type="button" class="btn btn-primary blue-button">Connect App</button></a>
+							<a href=""><button type="button" class="btn btn-primary blue-button">Save Goal</button></a>
 						</div>
 					</div>
 				</div>
@@ -130,7 +130,7 @@
 	<div class="container-fluid window-max-width">
 		<h4 class="title-text margin-top-20">Insights</h4>
 		<div class="row">
-			<div class="col-xs-12 margin-top-20">
+			<div class="col-xs-12 margin-top-10">
 				<div class="white-bg">
 					<h5 class="border-bottom">Your MindSet Plan <button type="button" class="btn btn-secondary tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="MindSet coaches you to build positive habits to reach your goals one a time, using suggested strategies that work for other users.">?</button></h5>
 					<div class="row">
@@ -139,21 +139,102 @@
 							<div class="text-left">
 								<h6 class="title-text margin-top-10">Current Goal</h6>
 								<p>What habit would you like to build?</p>
-								<p class="title-text">My Strategies:</p>
-								<div class="row strategy-container gray-text">
-									<p class="strategies">
-										<button type="button" class="btn btn-secondary accent-number">1</button>
-										<i>How you'll accomplish your goal...</i>
-									</p>
-								</div>
-								<div class="row strategy-container gray-text">
-									<p class="strategies">
-										<button type="button" class="btn btn-secondary accent-number">2</button>
-										<i> How you'll accomplish your goal...</i>
-									</p>
-								</div>
-								<div class="row strategy-container gray-text">
-									<p class="strategies"><button type="button" class="btn btn-secondary accent-number">3</button><i> How you'll accomplish your goal...</i></p>
+								<div class="col-xs-12">
+									<div class="row strategies-section">
+										<div class="col-xs-12 col-lg-9">
+											<div class="row strategies-container">
+												<div class="col-xs-12">
+													<p class="title-text float-xs-left">My Strategies:</p>
+													<span class="weekly-progress-text title-text small-text float-xs-right">Weekly Progress:</span>
+												</div>
+											</div>
+											<div class="row gray-text">
+												<div class="col-xs strategy-container">
+													<p class="strategies">
+														<button type="button" class="btn btn-secondary accent-number">1</button>
+														<i>How you'll accomplish your goal...</i>
+														<button type="button" class="btn btn-secondary blue-button strategy-btn strategy-btn-disabled float-xs-right"><small>Ok, done!</small></button>
+														<span class="gray-text float-xs-right weekly-progress-b">&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span>
+													</p>
+												</div>
+											</div>
+											<div class="row gray-text">
+												<div class="col-xs strategy-container">
+													<p class="strategies">
+														<button type="button" class="btn btn-secondary accent-number">2</button>
+														<i>How you'll accomplish your goal...</i>
+														<button type="button" class="btn btn-secondary blue-button strategy-btn strategy-btn-disabled float-xs-right"><small>Ok, done!</small></button>
+														<span class="gray-text float-xs-right weekly-progress-b">&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span>
+													</p>
+												</div>
+											</div>
+											<div class="row gray-text">
+												<div class="col-xs strategy-container">
+													<p class="strategies">
+														<button type="button" class="btn btn-secondary accent-number">3</button>
+														<i>How you'll accomplish your goal...</i>
+														<button type="button" class="btn btn-secondary blue-button strategy-btn strategy-btn-disabled float-xs-right"><small>Ok, done!</small></button>
+														<span class="gray-text float-xs-right weekly-progress-b">&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-3 minical">
+											<div class="pill-container text-center">
+												<small class=" title-text">Monthly Progress:</small>
+												<div class="col-xs-12 margin-top-5">
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-white"></div>
+														<div class="minical-cell-white"></div>
+														<div class="minical-cell-white"></div>
+														<div class="minical-cell-white"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+													</div>
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+													</div>
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+													</div>
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+													</div>
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+													</div>
+													<div class="row">
+														<div class="gray-text minical-key">&bull; <small>no data yet</small></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<button type="button" class="btn btn-info blue-button margin-top-20" data-toggle="modal" data-target="#goalModal">Set Your Goal</button>
@@ -161,7 +242,7 @@
 						<!-- Next Goal -->
 						<div class="col-xs-12 col-md-4 text-center">
 							<div class="text-left">
-								<h6 class="title-text margin-top-10">Next Goal</h6>
+								<h6 class="title-text margin-top-10">Next Goal:</h6>
 								<p>Suggested based on your habit and mood data.</p>
 							</div>
 							<small><i class="gray-text">No suggestions yet... set a goal to get started!</i></small>
@@ -172,14 +253,14 @@
 			</div>
 			<!-- Articles -->
 			<div class="col-xs-12 margin-top-20">
-				<div class="white-bg">
+				<div class="white-bg margin-bottom-20">
 					<div class="row border-bottom">
 						<div class="col-xs-6 col-sm-8">
 							<h5>Inspirations <button type="button" class="btn btn-secondary tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Articles recommended for you based on your goals, mood data, and MindSet insights.">?</button></h5>
 						</div>
 						<div class="col-xs-5 col-sm-4 input-group">
 							<input type="text" class="form-control search-form" placeholder="Search">
-								<a href=""><button class="btn search-btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button></a>
+							<a href=""><button class="btn search-btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button></a>
 						</div>
 					</div>
 					<div class="article-container-container">
@@ -187,41 +268,65 @@
 							<div class="card article-card">
 								<img class="card-img-top img-fluid" src="images/a1.jpg" alt="Card image cap">
 								<div class="card-block">
-									<h5 class="card-title">The Internet Wants to Help You  Take Care of Yourself</h5>
+									<a href="http://www.theatlantic.com/health/archive/2015/10/internet-self-care/408580/" class="title-text" target="_blank"><h6 class="card-title">The Internet Wants to Help You  Take Care of Yourself</a></h6>
 									<p class="card-text">Stop. Are you hungry? Then eat something before reading this.</p>
-									<a href="http://www.theatlantic.com/health/archive/2015/10/internet-self-care/408580/" class="title-text" target="_blank">THE ATLANTIC</a>
-								</div>
-							</div>
-							<div class="card article-card">
-								<img class="card-img-top img-fluid" src="images/a2.jpg" alt="Card image cap">
-								<div class="card-block">
-									<h5 class="card-title">The Sleep Habits of Highly Successful People</h5>
-									<p class="card-text">Sleep is a much-coveted enterprise. And as researchers learn more…</p>
-									<a href="http://www.forbes.com/sites/alicegwalton/2015/11/13/the-sleep-habits-of-highly-successful-people-infographic/#1c90c820386f" class="title-text" target="_blank">FORBES</a>
-								</div>
-							</div>
-							<div class="card article-card">
-								<img class="card-img-top img-fluid" src="images/a3.jpg" alt="Card image cap">
-								<div class="card-block">
-									<h5 class="card-title">37 Science-Backed Tips For Better Sleep Tonight</h5>
-									<p class="card-text">We know we’re supposed to get enough sleep, and we really try. But we also…</p>
-									<a href="http://www.huffingtonpost.com/2014/03/17/better-sleep-tips-best_n_4958036.html" class="title-text" target="_blank">HUFFINGTON POST</a>
+									<a href="http://www.theatlantic.com/health/archive/2015/10/internet-self-care/408580/" class="title-text" target="_blank"><small>THE ATLANTIC</small></a>
 								</div>
 							</div>
 							<div class="card article-card">
 								<img class="card-img-top img-fluid" src="images/a4.jpg" alt="Card image cap">
 								<div class="card-block">
-									<h5 class="card-title">Self-Care and Why It’s Important</h5>
+									<h6 class="card-title"><a href="http://therapywithheart.com/self-care-important/" class="title-text" target="_blank">Self-Care and Why It’s Important</a></h6>
 									<p class="card-text">Self-care is a way to release some of the stress in your life. It seems that we don't do enough of this…</p>
-									<a href="http://therapywithheart.com/self-care-important/" class="title-text" target="_blank">THERAPY WITH HEART</a>
+									<a href="http://therapywithheart.com/self-care-important/" class="title-text" target="_blank"><small>THERAPY WITH HEART</small></a>
 								</div>
 							</div>
 							<div class="card article-card">
-								<img class="card-img-top img-fluid" src="images/a4.jpg" alt="Card image cap">
+								<img class="card-img-top img-fluid" src="images/a8.png" alt="Card image cap">
 								<div class="card-block">
-									<h5 class="card-title">Self-Care and Why It’s Important</h5>
-									<p class="card-text">Self-care is a way to release some of the stress in your life. It seems that we don't do enough of this…</p>
-									<a href="http://therapywithheart.com/self-care-important/" class="title-text" target="_blank">THERAPY WITH HEART</a>
+									<h6 class="card-title"><a href="http://99u.com/articles/24401/a-makers-guidebook-9-stoic-principles-to-nurture-your-life-and-work" class="title-text" target="_blank">The Stoic: 9 Principles to Help You Keep Calm in Chaos</a></h6>
+									<p class="card-text">Act on your principles, not your moods. How the ancient philosophy of…</p>
+									<a href="http://99u.com/articles/24401/a-makers-guidebook-9-stoic-principles-to-nurture-your-life-and-work" class="title-text" target="_blank"><small>99U</small></a>
+								</div>
+							</div>
+							<div class="card article-card">
+								<img class="card-img-top img-fluid" src="images/a7.jpg" alt="Card image cap">
+								<div class="card-block">
+									<h6 class="card-title"><a href="http://www.theatlantic.com/health/archive/2016/05/why-self-compassion-works-better-than-self-esteem/481473/" class="title-text" target="_blank">Why Self-Compassion Works Better Than Self-Esteem</a></h6>
+									<p class="card-text">I recently interviewed Neff about how self-esteem fails us and how we can boost…</p>
+									<a href="http://www.theatlantic.com/health/archive/2016/05/why-self-compassion-works-better-than-self-esteem/481473/" class="title-text" target="_blank"><small>THE ATLANTIC</small></a>
+								</div>
+							</div>
+							<div class="card article-card">
+								<img class="card-img-top img-fluid" src="images/a6.jpg" alt="Card image cap">
+								<div class="card-block">
+									<h6 class="card-title"><a href="http://tinybuddha.com/blog/45-simple-self-care-practices-for-a-healthy-mind-body-and-soul/" class="title-text" target="_blank">45 Simple Self-Care Practices for a Healthy Mind, Body, and Soul</a></h6>
+									<p class="card-text">With a little bit of attention to your own self-care, you'll feel more connected to…</p>
+									<a href="http://tinybuddha.com/blog/45-simple-self-care-practices-for-a-healthy-mind-body-and-soul/" class="title-text" target="_blank"><small>TINYBUDDHA</small></a>
+								</div>
+							</div>
+							<div class="card article-card">
+								<img class="card-img-top img-fluid" src="images/a9.png" alt="Card image cap">
+								<div class="card-block">
+									<h6 class="card-title"><a href="http://99u.com/articles/43277/how-to-silence-your-irrationally-harsh-inner-critic" class="title-text" target="_blank">How to Silence Your Irrationally Harsh Inner Critic</a></h6>
+									<p class="card-text">Your harshest critic is often yourself. You might not even realize it, especially as…</p>
+									<a href="http://99u.com/articles/43277/how-to-silence-your-irrationally-harsh-inner-critic" class="title-text" target="_blank"><small>99U</small></a>
+								</div>
+							</div>
+							<div class="card article-card">
+								<img class="card-img-top img-fluid" src="images/a5.jpg" alt="Card image cap">
+								<div class="card-block">
+									<h6 class="card-title"><a href="http://tinybuddha.com/blog/10-tips-to-overcome-negative-thoughts-positive-thinking-made-easy/" class="title-text" target="_blank">10 Tips to Overcome Negative Thoughts: Positivity Made Easy</a></h6>
+									<p class="card-text">“See the positive side, the potential, and make an effort.” ~Dalai Lama…</p>
+									<a href="http://tinybuddha.com/blog/10-tips-to-overcome-negative-thoughts-positive-thinking-made-easy/" class="title-text" target="_blank"><small>TINYBUDDHA</small></a>
+								</div>
+							</div>
+							<div class="card article-card">
+								<img class="card-img-top img-fluid" src="images/a10.jpg" alt="Card image cap">
+								<div class="card-block">
+									<h6 class="card-title"><a href="http://www.huffingtonpost.com/john-whyte-md-mph/stress-good_b_5582961.html" class="title-text" target="_blank">How Stress Can Be a Very Good Thing</a></h6>
+									<p class="card-text">Stress, when harnessed properly, can have numerous benefits for the body and mind. But to…</p>
+									<a href="http://www.huffingtonpost.com/john-whyte-md-mph/stress-good_b_5582961.html" class="title-text" target="_blank"><small>HUFFINGTON POST</small></a>
 								</div>
 							</div>
 						</div>

@@ -327,13 +327,7 @@ a:hover, a:active, a:focus {
 .ev-14 {position: absolute;	left: 76.1%;	top: 236px;	height: 46px;}
 .ev-15 {position: absolute;	left: 89.05%;	top: 140px;	height: 168px;}
 
-.cal-mood-marker {
-	position: absolute; 
-	left: 73%; 
-	top: 368px; 
-	color: #33CCCC;
-	cursor: pointer;
-}
+.cal-mood-marker {position: absolute; left: 73%; top: 368px; color: #33CCCC;}
 
 /* To Do */
 .todo-bg {

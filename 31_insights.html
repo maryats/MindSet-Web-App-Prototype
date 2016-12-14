@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Marie Yatsyk">
+
+	<title>MindSet</title>
+
+	<!-- Bootstrap 4.0.0 Alpha 5 -->
+	<link rel="stylesheet" href="css/bootstrap-flex.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Hamburger Nav CSS -->
+	<link href="css/hamburgers.css" rel="stylesheet">
+	<!-- Lato Font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<script src="https://use.fontawesome.com/6d24c2dec2.js"></script>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#33cccc">
+	<meta name="theme-color" content="#d3f3f3">
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-light" style="background-color: white;">
+		<div class="container-fluid navbar-max-width">
+			<div class="navbar-header">
+				<button class="hidden-md-up hamburger hamburger--squeeze float-xs-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>  
+				<a class="navbar-brand" href="#">
+					<svg width="2.1em" height="2em" xmlns="http://www.w3.org/2000/svg" viewBox="86 222 165.3 191.6"><path d="M213.5 297.6c28.3 4.6 27.9 24.5 29.4 36.3 0.9 6.7 5 14.2 8.3 19.9 1.5 2.5-7.5 3.7-10 7.8 -1.2 2-4.7 19.7-7.3 22.8 -2.5 3-18.3-5.9-21-3.2 -3.7 3.7-4.8 11.3-5.3 15.9 -0.6 6.8 2.1 16.5-0.8 16.6 -2.8 0.1-18.6-5.6-27.6-15 -4.8-5.1-9.5-10.4-8.6-13.9 0.3-1.2 4-3.6 7.9-8.3 2.2-2.7 9-12.2 4-19.9 -6.2-9.5-10.8-20.6-8.3-32C175.4 318.9 184.6 292.9 213.5 297.6zM208 327.7c-3.9-5.7-7.8-8.4-13.7-7.2 -5.8 1.1-9.4 5.7-8.7 12.1 0.8 7.5 13.4 17.5 22.4 22.9 9.1-5.5 20-15 21.4-22.4 0.8-4.4-1.8-12.1-8.5-12.7C213.7 319.6 208 327.7 208 327.7z" fill="#0B5270"/></path></svg>MindSet
+				</a>
+			</div>
+			<div id="navbarResponsive" class="collapse navbar-toggleable-sm" id="navbarResponsive" aria-expanded="false">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="32_calendar.html">Calendar</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Insights<span class="sr-only">(current)</span></a>
+					</li>
+					<div class="float-md-right">
+						<li class="nav-item">
+							<a class="nav-link" href="33_settings.html">Settings</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Log Out</a>
+						</li>
+					</div>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<!-- Modal: Connect Data Source-->
+	<div class="modal fade" id="goalModal" tabindex="-1" role="dialog" aria-labelledby="goalModal" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content text-center">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title no-border" id="goalModal">Set Your Goal</h4>
+				</div>
+				<div class="modal-body text-left">
+					<div class="col-xs-12">
+						<h6 class="title-text margin-top-10">Current Goal</h6>
+						<p>What habit would you like to build?</p>
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="Ex: Get 8 hours of sleep every day." value="" id="goal-input">
+						</div>
+						<h6 class="title-text margin-top-10">Why?</h6>
+						<p>What motivates you to reach this goal?</p>
+						<div class="form-group">
+							<input id="motivation" class="form-control" type="text" placeholder="Ex: So I can feel happier and be more productive." value="" id="goal-input">
+						</div>
+					</div>
+					<div class="col-xs-12 modal-strategies">
+						<h6 class="title-text margin-top-10">Strategies</h6>
+						<p>What action(s) will I take to meet this goal?</p>
+						<div class="row">
+							<div class="col-xs-1">
+								<button type="button" class="btn btn-secondary accent-number">1</button>
+							</div>
+							<div class="col-xs-11">
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Ex: Go to bed at midnight every day." value="" id="goal-input">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-1">
+								<button type="button" class="btn btn-secondary accent-number">2</button>
+							</div>
+							<div class="col-xs-11">
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Ex: Get up at 8am every day." value="" id="goal-input">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-1">
+								<button type="button" class="btn btn-secondary accent-number">3</button>
+							</div>
+							<div class="col-xs-11">
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Ex: Stop using my phone 30 min. before bed." value="" id="goal-input">
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer text-center">
+							<a href=""><button type="button" class="btn btn-primary blue-button">Save Goal</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<div class="container-fluid window-max-width">
+		<h4 class="title-text margin-top-20">Insights</h4>
+		<div class="row">
+			<div class="col-xs-12 margin-top-10">
+				<div class="white-bg">
+					<h5 class="border-bottom">Your MindSet Plan <button type="button" class="btn btn-secondary tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="MindSet coaches you to build positive habits to reach your goals one a time, using suggested strategies that work for other users.">?</button></h5>
+					<div class="row">
+						<!-- Current Goal -->
+						<div class="col-xs-12 col-md-8 text-center">
+							<div class="text-left">
+								<h6 class="title-text margin-top-10">Current Goal: Get 8 hours of sleep every day</h6>
+								<p><span class="green-text">Why?</span>&nbsp;&nbsp;So I can feel happier and be more productive.</p>
+								<div class="col-xs-12">
+									<div class="row strategies-section">
+										<div class="col-xs-12 col-lg-9">
+											<div class="row strategies-container">
+												<div class="col-xs-12">
+													<p class="title-text float-xs-left">My Strategies:</p>
+													<span class="weekly-progress-text title-text small-text float-xs-right">Weekly Progress:</span>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs strategy-container">
+													<p class="strategies">
+														<button type="button" class="btn btn-secondary accent-number">1</button>
+														&nbsp;Go to bed at midnight every day.
+														<button type="button" class="btn btn-secondary blue-button strategy-btn float-xs-right"><small>Ok, done!</small></button>
+														<span class="gray-text float-xs-right weekly-progress-b"><span class="green-text">&bull;&bull;&bull;&bull;</span>&bull;&bull;<span class="green-text">&bull;</span></span>
+													</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs strategy-container">
+													<p class="strategies">
+														<button type="button" class="btn btn-secondary accent-number">2</button>
+														&nbsp;Get up at 8am every day.
+														<button type="button" class="btn btn-secondary blue-button strategy-btn float-xs-right"><small>Ok, done!</small></button>
+														<span class="gray-text float-xs-right weekly-progress-b"><span class="green-text">&bull;&bull;&bull;</span>&bull;&bull;<span class="green-text">&bull;&bull;</span></span>
+													</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs strategy-container">
+													<p class="strategies">
+														<button type="button" class="btn btn-secondary accent-number">3</button>
+														&nbsp;Stop using my phone 30 min. before bed.
+														<button type="button" class="btn btn-secondary blue-button strategy-btn float-xs-right"><small>Ok, done!</small></button>
+														<span class="gray-text float-xs-right weekly-progress-b"><span class="green-text">&bull;</span>&bull;&bull;&bull;&bull;&bull;<span class="green-text">&bull;</span></span>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-3 minical">
+											<div class="pill-container text-center">
+												<small class=" title-text">Monthly Progress:</small>
+												<div class="col-xs-12 margin-top-5">
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-white"></div>
+														<div class="minical-cell-white"></div>
+														<div class="minical-cell-white"></div>
+														<div class="minical-cell-white"></div>
+														<div class="minical-cell-orange"></div>
+														<div class="minical-cell-yellow"></div>
+														<div class="minical-cell-green"></div>
+													</div>
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-green"></div>
+														<div class="minical-cell-yellow"></div>
+														<div class="minical-cell-green"></div>
+														<div class="minical-cell-orange"></div>
+														<div class="minical-cell-yellow"></div>
+														<div class="minical-cell-orange"></div>
+														<div class="minical-cell-green"></div>
+													</div>
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-green"></div>
+														<div class="minical-cell-green"></div>
+														<div class="minical-cell-green"></div>
+														<div class="minical-cell-yellow"></div>
+														<div class="minical-cell-green"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+													</div>
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+													</div>
+													<div class="row flex-items-xs-center">
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+														<div class="minical-cell-gray"></div>
+													</div>
+													<div class="row">
+														<div class="gray-text minical-key">
+															<span class="green-text">&bull;</span><small>8+ hr</small>
+															<span class="yellow-text">&bull;</span><small>6-7 hr</small>
+															<span class="orange-text">&bull;</span><small>-6 hr</small>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="btn btn-info blue-button margin-top-20 disabled"><div class="cal-event-text">Okay, I've mastered this habit!<br>
+								<span class="small-text">Bring on my next goal.</span></div></button>
+							</div>
+							<!-- Next Goal -->
+							<div class="col-xs-12 col-md-4 text-center">
+								<div class="text-left">
+									<h6 class="title-text margin-top-10">Next Goal:</h6>
+									<p>Suggested based on your habit and mood data.</p>
+								</div>
+								<div class="pill-container next-goal-tip text-center">
+									<div class="text-left margin-top-5">
+										<h6>Go to the gym 3 times a week</h6>
+										<p><span class="green-text">Why?</span>&nbsp;&nbsp;Exercising reduces stress, improves your mood, and helps you sleep regularly.</p>
+									</div>
+									<button type="button" class="btn btn-secondary blue-button strategy-btn"><small><i class="fa fa-check" aria-hidden="true"></i> Accept goal!</small></button>
+									<button type="button" class="btn btn-secondary blue-button strategy-btn gray-button"><small><i class="fa fa-times" aria-hidden="true"></i> Nah, not for me.</small></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Articles -->
+				<div class="col-xs-12 margin-top-20">
+					<div class="white-bg margin-bottom-20">
+						<div class="row border-bottom">
+							<div class="col-xs-6 col-sm-8">
+								<h5>Inspirations <button type="button" class="btn btn-secondary tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Articles recommended for you based on your goals, mood data, and MindSet insights.">?</button></h5>
+							</div>
+							<div class="col-xs-5 col-sm-4 input-group">
+								<input type="text" class="form-control search-form" placeholder="Search">
+								<a href="41_insights.html"><button class="btn search-btn" type="button"><i class="fa fa-search" aria-hidden="true"></i></button></a>
+							</div>
+						</div>
+						<div class="article-container-container">
+							<div class="row margin-top-20 article-container">
+							<div class="card article-card">
+									<img class="card-img-top img-fluid" src="images/a12.png" alt="Card image cap">
+									<div class="card-block">
+										<h6 class="card-title"><a href="http://99u.com/workbook/38751/how-to-fall-asleep-in-under-1-minute" class="title-text" target="_blank">How to Fall Asleep In Less Than 1 Minute</a></h6>
+										<p class="card-text">The vast majority of people require seven to eight hours of sleep to feel fully rested, but 40 percent of…</p>
+										<a href="http://99u.com/workbook/38751/how-to-fall-asleep-in-under-1-minute" class="title-text" target="_blank"><small>99U</small></a>
+									</div>
+								</div>
+								<div class="card article-card">
+									<img class="card-img-top img-fluid" src="images/a13.jpg" alt="Card image cap">
+									<div class="card-block">
+										<h6 class="card-title"><a href="https://hbr.org/2015/08/research-shows-how-anxiety-and-technology-are-affecting-our-sleep" class="title-text" target="_blank">Relax, Turn Off Your Phone, and Go to Sleep</a></h6>
+										<p class="card-text">As a child, I was a terrible sleeper. My parents would often find me awake at 3 AM with a flashlight…</p>
+										<a href="https://hbr.org/2015/08/research-shows-how-anxiety-and-technology-are-affecting-our-sleep" class="title-text" target="_blank"><small>HARVARD BUSINESS REVIEW</small></a>
+									</div>
+								</div>
+								<div class="card article-card">
+									<img class="card-img-top img-fluid" src="images/a14.jpg" alt="Card image cap">
+									<div class="card-block">
+										<h6 class="card-title"><a href="http://www.theatlantic.com/health/archive/2015/02/how-smartphones-are-ruining-our-sleep/385792/" class="title-text" target="_blank">How Smartphones Hurt Sleep</a></h6>
+										<p class="card-text">The answer to the question "How'd you sleep?" has, for most of human history, been "not too well." Even…</p>
+										<a href="http://www.theatlantic.com/health/archive/2015/02/how-smartphones-are-ruining-our-sleep/385792/" class="title-text" target="_blank"><small>THE ATLANTIC</small></a>
+									</div>
+								</div>
+								<div class="card article-card">
+									<img class="card-img-top img-fluid" src="images/a16.jpg" alt="Card image cap">
+									<div class="card-block">
+										<h6 class="card-title"><a href="http://www.huffingtonpost.com/2015/02/05/thinking-before-sleep_n_6572262.html" class="title-text" target="_blank">What Really Works When You’re Too Anxious To Fall Asleep</a></h6>
+										<p class="card-text">Why is it that just when our heads hit the pillow our thoughts take off in a sprint?</p>
+										<a href="http://www.huffingtonpost.com/2015/02/05/thinking-before-sleep_n_6572262.html" class="title-text" target="_blank"><small>HUFFINGTON POST</small></a>
+									</div>
+								</div>
+								<div class="card article-card">
+									<img class="card-img-top img-fluid" src="images/a11.jpg" alt="Card image cap">
+									<div class="card-block">
+										<h6 class="card-title"><a href="http://www.huffingtonpost.com/2014/09/17/stress-and-sleep_n_5824506.html" class="title-text" target="_blank">5 Ways Stress Wrecks Your Sleep (And What To Do About It)</a></h6>
+										<p class="card-text"> The presence of stress in our lives has the tendency to be a “you can run but…</p>
+										<a href="http://www.huffingtonpost.com/2014/09/17/stress-and-sleep_n_5824506.html" class="title-text" target="_blank"><small>HUFFINGTON POST</small></a>
+									</div>
+								</div>
+								<div class="card article-card">
+									<img class="card-img-top img-fluid" src="images/a2.jpg" alt="Card image cap">
+									<div class="card-block">
+										<h6 class="card-title"><a href="http://www.forbes.com/sites/alicegwalton/2015/11/13/the-sleep-habits-of-highly-successful-people-infographic/#1c90c820386f" class="title-text" target="_blank">The Sleep Habits of Highly Successful People</a></h6>
+										<p class="card-text">Sleep is a much-coveted enterprise. And as researchers learn more and more about its purpose…</p>
+										<a href="http://www.forbes.com/sites/alicegwalton/2015/11/13/the-sleep-habits-of-highly-successful-people-infographic/#1c90c820386f" class="title-text" target="_blank"><small>FORBES</small></a>
+									</div>
+								</div>
+								<div class="card article-card">
+									<img class="card-img-top img-fluid" src="images/a3.jpg" alt="Card image cap">
+									<div class="card-block">
+										<h6 class="card-title"><a href="http://www.huffingtonpost.com/2014/03/17/better-sleep-tips-best_n_4958036.html" class="title-text" target="_blank">37 Science-Backed Tips For Better Sleep Tonight</a></h6>
+										<p class="card-text">We know we’re supposed to get enough sleep, and we really try. But we also know it’s often easier said than…</p>
+										<a href="http://www.huffingtonpost.com/2014/03/17/better-sleep-tips-best_n_4958036.html" class="title-text" target="_blank"><small>HUFFINGTON POST</small></a>
+									</div>
+								</div>
+								<div class="card article-card">
+									<img class="card-img-top img-fluid" src="images/a15.png" alt="Card image cap">
+									<div class="card-block">
+										<h6 class="card-title"><a href="http://www.wsj.com/articles/the-worst-kind-of-insomnia-1481457603" class="title-text" target="_blank">The Worst Kind of Insomnia</a></h6>
+										<p class="card-text">There are simple, and sometimes surprising, ways to beat that awful feeling of waking up at 4 in the…</p>
+										<a href="http://www.wsj.com/articles/the-worst-kind-of-insomnia-1481457603" class="title-text" target="_blank"><small>WALL STREET JOURNAL</small></a>
+									</div>
+								</div>
+							</div>
+						</div> <!-- /.article-container-container -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+		<script>
+	// Enables Tooltips
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip(); 
+	});
+
+	// Toggle Hamburger with jQuery
+	var $hamburger = $(".hamburger");
+	$hamburger.on("click", function(e) {
+		$hamburger.toggleClass("is-active");
+	});
+
+	// Shows modal content after "Why?" input is filled out
+	$(document).ready(function() {
+		$("#motivation").change(function() {
+			$('.modal-strategies').show(500);
+		});
+	});
+</script>
+</body>
+</html>
