@@ -8,10 +8,15 @@ h1 {
 }
 h4 {
 	font-size: 1.3rem;
+	color: #0B5270;
+}
+h5 {
+	color: #0B5270;
 }
 h6 {
 	/*font-weight: bold;*/
 	line-height: 1.3rem;
+	color: #0B5270;
 }
 a {
 	text-decoration: none;
@@ -33,6 +38,9 @@ a:hover, a:active, a:focus {
 .orange-text {
 	color: #F6A623;;
 }
+.title-text {
+	color: #0B5270;
+}
 
 .window-max-width {
 	max-width: 85%;
@@ -40,12 +48,22 @@ a:hover, a:active, a:focus {
 .modal-content  {
 	border-radius: 15px; 
 	border-color: transparent;
-
 }
 .modal-backdrop {
 	background-color: #0B5270;
 }
-
+#myModal {
+	margin-top: 20vh;
+}
+#welcomeModal {
+	margin-top: 22vh;
+}
+#calModal {
+	margin-top: 15vh;
+}
+#dataSrcModal {
+	margin-top: 15vh;
+}
 
 /* ----------------------- Common Elements ----------------------- */
 
@@ -66,12 +84,12 @@ a:hover, a:active, a:focus {
 	cursor: default;
 }
 .tooltip.tooltip-top .tooltip-inner::before, .tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
-	border-top-color: white;
+	border-top-color: #33CCCC;
 }
 .tooltip-inner {
 	font-size: 12px;
-	color: #33cccc;
-	background-color: white;
+	color: white;
+	background-color: #33CCCC;
 	border-radius: 10px;
 }
 
@@ -295,6 +313,7 @@ a:hover, a:active, a:focus {
 	z-index: 10;
 	border-radius: 6px;
 	padding: 3px 5px;
+	overflow: hidden;
 }
 .ev-personal {
 	background-color: rgba(126, 211, 33, 0.8);
@@ -524,6 +543,9 @@ a:hover, a:active, a:focus {
 .edit-buttons {
 	margin-top: 15px;
 }
+.collapse-caret {
+	color: #0B5270;
+}
 
 /* ----------------------- Global Helpers ------------------------ */
 
@@ -541,10 +563,6 @@ a:hover, a:active, a:focus {
 .text-left {
 	text-align: left;
 }
-.title-text {
-	color: #0B5270;
-}
-
 .small-text {
 	font-size: .6rem;
 	line-height: .8rem;
